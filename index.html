@@ -92,7 +92,7 @@
             </li>
           </ul>
         </nav>
-        
+
         <ul class="header__list">
           <li class="header__item header__item--tel">
             <a class="header__link header__link--tel" href="tel:+380991231212"
@@ -117,9 +117,9 @@
       </div>
     </header>
     <section class="section hero">
-      <div class="container">
+      <div class="container hero__container">
         <ul class="hero__list">
-          <li class="hero__item">
+          <li class="hero__item hero__item--first">
             <a class="hero__btn" href="#"
               ><span class="hero__btnText">online</span></a
             >
@@ -135,103 +135,122 @@
             >
           </li>
         </ul>
-        <div class="hero__titleThumb">
-          <h1 class="hero__title">Таргетована реклама</h1>
-          <h2 class="hero__backTitle">Курс</h2>
-        </div>
+        <h1 class="hero__title">Таргетована реклама</h1>
+        <h2 class="hero__backTitle">Курс</h2>
 
         <ul class="hero__sublist">
           <li class="hero__subitem">
-             <svg width="10" height="10" class="specifications__icon">
-            <use href="./images/sprite.svg#check"></use>
-          </svg>
+            <svg width="23" height="12" class="hero__icon">
+              <use href="./images/sprite.svg#check"></use>
+            </svg>
             <h2 class="hero__subtitle">Трудоустройство для выпускников</h2>
           </li>
           <li class="hero__subitem">
-            <svg width="10" height="10" class="specifications__icon">
-            <use href="./images/sprite.svg#check"></use>
-          </svg>
+            <svg width="23" height="12" class="hero__icon">
+              <use href="./images/sprite.svg#check"></use>
+            </svg>
             <h2 class="hero__subtitle">Новейшие программы для 2022 года +</h2>
           </li>
         </ul>
+
         <div class="hero__thumb">
-          <h3 class="hero__promo">
-            Вартість:
-            <span class="hero__promo hero__promo--altPrice">20 000 грн</span>
-            <span class="hero__promo hero__promo--price">16 000</span>
-            <span class="hero__promo hero__promo--value">грн</span>
-          </h3>
-        </div>
+          <div class="hero__price">
+            <h3 class="hero__promo">
+              Вартість:
+              <span class="hero__promo hero__promo--altPrice">20 000 грн</span>
+              <span class="hero__promo hero__promo--price">16 000</span>
+              <span class="hero__promo hero__promo--value">грн</span>
+            </h3>
 
-        <div class="hero__listThumb">
-          <div class="hero__signThumb">
-            <a class="hero__sign" href="#">записатись на курс</a>
-            <p class="hero__subtext">
-              Залишилось
-              <span class="hero__subtext hero__subtext--bold">3 місця</span> на
-              курсі
-            </p>
+            <div class="hero__listThumb">
+              <a class="hero__sign" href="#">записатись на курс</a>
+              <p class="hero__subtext">
+                Залишилось
+                <span class="hero__subtext hero__subtext--bold">3 місця</span>
+                на курсі
+              </p>
+            </div>
           </div>
+          <ul class="hero__propsList">
+            <li class="hero__propItem">
+              <p class="hero__propText">Старт курсу:</p>
+              <p class="hero__propText hero__propText--bottom">
+                21 березня 2022
+              </p>
+            </li>
+            <li class="hero__propItem">
+              <p class="hero__propText">Тривалість:</p>
+              <p class="hero__propText hero__propText--bottom">5 тижнів</p>
+            </li>
+            <li class="hero__propItem">
+              <p class="hero__propText">Рівень знань:</p>
+              <p class="hero__propText hero__propText--bottom">Продвинутий</p>
+            </li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-        <ul class="hero__propsList">
-          <li class="hero__propItem">
-            <p class="hero__propText"></p>
-            <p class="hero__propText hero__propText--bottom"></p>
+    <section class="section specifications">
+      <div class="container">
+        <h2 class="specifications__header">Кому підійде навчання</h2>
+        <ul class="specifications__list">
+          <li class="specifications__item">
+            <svg width="80" height="80" class="specifications__icon">
+              <use href="./images/sprite.svg#profile"></use>
+            </svg>
+            <p class="specifications__text">
+              Початківцям маркетологам
+            </p>
           </li>
-          <li class="hero__propItem">
-            <p class="hero__propText"></p>
-            <p class="hero__propText hero__propText--bottom"></p>
+          <li class="specifications__item specifications__item--mobile">
+            <svg width="80" height="80" class="specifications__icon">
+              <use href="./images/sprite.svg#target"></use>
+            </svg>
+            <p class="specifications__text">
+              Початківцям інтернет-маркетологам
+            </p>
           </li>
-          <li class="hero__propItem">
-            <p class="hero__propText"></p>
-            <p class="hero__propText hero__propText--bottom"></p>
+          <li class="specifications__item">
+            <svg width="80" height="80" class="specifications__icon">
+              <use href="./images/sprite.svg#star"></use>
+            </svg>
+            <p class="specifications__text">Досвідченим маркетологам</p>
+          </li>
+          <li class="specifications__item">
+            <svg width="80" height="80" class="specifications__icon">
+              <use href="./images/sprite.svg#case"></use>
+            </svg>
+            <p class="specifications__text">Підприємцям-початківцям</p>
+          </li>
+          <li class="specifications__item">
+            <svg width="80" height="80" class="specifications__icon">
+              <use href="./images/sprite.svg#cart"></use>
+            </svg>
+            <p class="specifications__text">Власникам малого бізенсу</p>
+          </li>
+          <li class="specifications__item">
+            <svg width="80" height="80" class="specifications__icon">
+              <use href="./images/sprite.svg#people"></use>
+            </svg>
+            <p class="specifications__text">Керівникам відділів маркетингу</p>
+          </li>
+          <li class="specifications__item">
+            <svg width="80" height="80" class="specifications__icon">
+              <use href="./images/sprite.svg#mike"></use>
+            </svg>
+            <p class="specifications__text">Керівникам проектів</p>
+          </li>
+          <li class="specifications__item specifications__item--mobile">
+            <svg width="80" height="80" class="specifications__icon">
+              <use href="./images/sprite.svg#cell"></use>
+            </svg>
+            <p class="specifications__text">
+              Початківцям смм-менеджерам
+            </p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="section specifications">
-        <div class="container">
-      <h2 class="specifications__header">Кому підійде навчання</h2>
-      <ul class="specifications__list">
-        <li class="specifications__item">
-          <svg width="80" height="80" class="specifications__icon">
-            <use href="./images/sprite.svg#profile"></use>
-          </svg>
-          <p class="specifications__text">Початківцям інтернет-маркетологам</p>
-        </li>
-        <li class="specifications__item">
-          <svg width="80" height="80" class="specifications__icon">
-            <use href="./images/sprite.svg#star"></use>
-          </svg>
-          <p class="specifications__text">Досвідченим маркетологам</p>
-        </li>
-        <li class="specifications__item">
-          <svg width="80" height="80" class="specifications__icon">
-            <use href="./images/sprite.svg#case"></use>
-          </svg>
-          <p class="specifications__text">Підприємцям-початківцям</p>
-        </li>
-        <li class="specifications__item">
-          <svg width="80" height="80" class="specifications__icon">
-            <use href="./images/sprite.svg#cart"></use>
-          </svg>
-          <p class="specifications__text">Власникам малого бізенсу</p>
-        </li>
-        <li class="specifications__item">
-          <svg width="80" height="80" class="specifications__icon">
-            <use href="./images/sprite.svg#people"></use>
-          </svg>
-          <p class="specifications__text">Керівникам відділів маркетингу</p>
-        </li>
-        <li class="specifications__item">
-          <svg width="80" height="80" class="specifications__icon">
-            <use href="./images/sprite.svg#mike"></use>
-          </svg>
-          <p class="specifications__text">Керівникам проектів</p>
-        </li>
-      </ul>
-    </section>
-    </div>
   </body>
 </html>
