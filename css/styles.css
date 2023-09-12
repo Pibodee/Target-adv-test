@@ -539,6 +539,33 @@ body {
     margin-bottom: 29px;
   }
 
+  .hero__title::after {
+  content: "";
+  background-image: url(../images/hero/Vector6.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 180px;
+  top: -102px;
+  left: 260px;
+}
+
+  .hero__listThumb::after {
+  content: "";
+  background-image: url(../images/hero/Vector7.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 130px;
+  top: 150px;
+  left: -365px;
+}
+
+.hero__propsList::after {
+  display: none;
+}
+
+
   .hero__sign {
     width: 275px;
     padding: 20px 50px;
