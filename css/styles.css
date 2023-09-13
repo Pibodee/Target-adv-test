@@ -149,7 +149,15 @@ body {
   background-size: auto auto;
   background-position: center 0;
   padding-top: 168px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+      background: url(../images/hero/shadowSmall@2x.png), url(../images/hero/backgrSmall@2x.png);
+      background-position: top center;
+    background-color: var(--secondary-cl);
+    background-repeat: no-repeat;
+    background-size: 637px 817px, 376px 361px};
 }
+
 
 .hero__container {
   position: relative;
@@ -167,7 +175,6 @@ body {
   border: 26px;
   transform: rotate(1deg);
   fill: var(--active-cl);
-  z-index: 10;
 }
 
 .hero__list {
@@ -567,12 +574,20 @@ body {
   .hero {
     padding-top: 102px;
     padding-bottom: 99px;
-    background-image: url(../images/hero/shadowLarge.png),
-      url(../images/hero/backgrLarge.png);
+    background: url(../images/hero/bottomShadow.png), url(../images/hero/shadowLarge.png), url(../images/hero/backgrLarge.png);
+    background-position: right bottom, center, right;
     background-repeat: no-repeat;
-    background-size: auto auto;
-    background-position: right 0;
+    background-color: var(--secondary-cl);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+      background: url(../images/hero/bottomShadow@2x.png), url(../images/hero/shadowLarge@2x.png), url(../images/hero/backgrLarge@2x.png);
+    background-position: right bottom, center, right;
+    background-color: var(--secondary-cl);
+    background-repeat: no-repeat;
+    background-size: 50%, 1138px 750px, 1138px 750px ;};
+    
   }
+
 
   .hero__container {
     padding-left: 369px;
